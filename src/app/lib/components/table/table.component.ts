@@ -138,33 +138,6 @@ export class TableComponent implements OnInit, AfterViewInit {
       ) {
         columnSize = columnSize + 1;
       }
-
-      //   let definedWidth = 0;
-      //   for (var i = 0; i < this.tableDefn.length; i++) {
-      //     if (!this.tableDefn[i].width) this.tableDefn[i].width = 0;
-      //     else definedWidth = definedWidth + this.tableDefn[i].width!;
-      //   }
-      //   this.offsetWidth =
-      //     document.getElementById('' + this.tableId + '')!.offsetWidth -
-      //     margin -
-      //     definedWidth;
-      //   this.cellWidth = Math.floor(this.offsetWidth / columnSize);
-      // }
-
-      // if (this.thHeight) {
-      //   this.topHeight = (this.thHeight.nativeElement.offsetHeight - 30) / 2;
-      // }
-
-      // if (this.viewTip) this.viewTxt = this._transService.instant(this.viewTip);
-
-      // if (this.editTip) this.editTxt = this._transService.instant(this.viewTip!);
-
-      // if (this.downloadTip)
-      //   this.downloadTxt = this._transService.instant(this.viewTip!);
-
-      // console.log(this.url);
-
-      // this._cDref.markForCheck();
     }
   }
 

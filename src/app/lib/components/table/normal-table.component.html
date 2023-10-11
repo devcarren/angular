@@ -35,14 +35,15 @@
                 (change)="checkedItem($event, tableDS[i], i)"
               ></mat-checkbox>
             </td>
-            <td
-              *ngFor="let dfn of tableDefn; let j = index"
-              [style.width.px]="cellWidth"
-              [attr.data-label]="dfn.displayName"
-            >
-              {{ tableDS[i][tableDefn[j].mappingName!] }}
-            </td>
           </ng-container>
+          <td
+            *ngFor="let dfn of tableDefn; let j = index"
+            [style.width.px]="cellWidth"
+            [attr.data-label]="dfn.displayName"
+          >
+            {{ tableDS[i][tableDefn[j].mappingName!] }}
+          </td>
+
           <ng-container *ngIf="view || edit || delete || download || other">
             <td [style.width.px]="cellWidth">
               <ng-container *ngIf="delete">
